@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./SCSS/style.css">
+</head>
+<body>
+<header class="bg-light-blue">
+<!--  navbar styling-->
+  <nav class="main-nav">
+    <div class="nav-logo">
+      <img src="./images/logo.svg" alt="sunnyside">
+    </div>
+
+    <div class="main-menu-list">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__links">About</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__links">Services</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__links">Projects</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__links main-nav__contact">Contact</a>
+        </li>
+      </ul>
+
+      <div class="triangle"></div>
+    </div>
+    <div class="menu-bar"></div>
+  </nav>
+
+  <section class="welcome-section">
+    <h1 class="main-headers">We are creatives</h1>
+    <div><img src="./images/icon-arrow-down.svg" alt=""></div>
+  </section>
+</header>
+<main>
+  <section class="grid-section">
+    <div class="card card-2 card-mobile"></div>
+    <div class="card card-1">
+      <h3 class="secondary-header">Transform your brand</h3>
+      <p>We are a full-service creative agency specializing in helping brands grow fast.
+        Engage your clients through compelling visuals that do most of the marketing for you.
+      </p>
+      <div>
+        <a href="#" class="card-anchor">Learn more</a>
+      </div>
+    </div>
+
+    <div class="card card-2 card-desktop"></div>
+
+    <div class="card card-3 card-mobile"></div>
+
+    <div class="card card-3 card-desktop"></div>
+
+    <div class="card card-4">
+      <h3 class="secondary-header">Stand out to the right audience</h3>
+      <p>
+        Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+      </p>
+      <div>
+        <a href="#" class="card-anchor card-2-anchor">Learn more</a>
+      </div>
+    </div>
+
+    <div class="card graphic-cards card-5">
+      <h3 class="secondary-header">Graphic design</h3>
+      <p>
+        Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+      </p>
+    </div>
+
+    <div class="card graphic-cards card-6">
+      <h3 class="secondary-header">Photography</h3>
+      <p>
+        Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+      </p>
+    </div>
+  </section>
+
+  <section class="client-testimonials">
+    <h3 class="client-testimonials-header">Client testimonials</h3>
+
+    <div class="testimonials-grid">
+      <div class="t-card">
+        <div>
+          <img src="./images/image-emily.jpg" alt="emily">
+        </div>
+
+        <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+        <h4 class="secondary-header">Emily R.</h4>
+        <p>Marketing Director</p>
+      </div>
+      <div class="t-card">
+        <div>
+          <img src="./images/image-thomas.jpg" alt="thomas">
+        </div>
+
+        <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+        <h4 class="secondary-header">Thomas S.</h4>
+        <p>Chief Operating Officer</p>
+      </div>
+      <div class="t-card">
+        <div>
+          <img src="./images/image-jennie.jpg" alt="jennie">
+        </div>
+
+        <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+        <h4 class="secondary-header">Jennie F.</h4>
+        <p>Business Owner</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="gallery-images img-1"></div>
+    <div class="gallery-images img-2"></div>
+    <div class="gallery-images img-3"></div>
+    <div class="gallery-images img-4"></div>
+  </section>
+</main>
+<footer>
+  <section class="footer">
+    <div class="logo">
+      <img src="./images/logo.svg" alt="sunnyside">
+    </div>
+
+    <ul class="footer-list">
+      <li class="footer-items">
+        <a href="#" class="footer-links">About</a>
+      </li>
+      <li class="footer-items">
+        <a href="#" class="footer-links">Services</a>
+      </li>
+      <li class="footer-items">
+        <a href="#" class="footer-links">Projects</a>
+      </li>
+    </ul>
+
+    <div class="socials">
+      <img src="./images/icon-facebook.svg" alt="facebook">
+      <img src="./images/icon-instagram.svg" alt="instagram">
+      <img src="./images/icon-twitter.svg" alt="twitter">
+      <img src="./images/icon-pinterest.svg" alt="pinterest">
+    </div>
+  </section>
+</footer>
+<script type="text/javascript">
+  document.querySelector('.menu-bar').addEventListener('click', ()=>{
+
+    document.querySelector('.main-nav__list').classList.toggle('main-nav__list_show')
+  });
+</script>
+</body>
+</html>
